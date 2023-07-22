@@ -1,0 +1,130 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.navcontainer {
+    width: 100vw;
+    background: linear-gradient(90deg, #57357b 0%, #3F2B96 100%);
+    min-height: 70px;
+    position: relative;
+
+}
+
+.container {
+    height: 150vh;
+    width: 100vw;
+    overflow-x: none;
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #343333, #000000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #343333, #000000);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#navlist {
+    list-style: none;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    width: 100%;
+
+}
+
+#navlogotext {
+    font-size: 2.2rem;
+    font-family: 'Montserrat',;
+}
+
+nav {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+}
+
+#navItems {
+    display: flex;
+    gap: 40px;
+}
+
+.footerBox {
+    overflow-x: none;
+    width: 100%;
+    text-align: center;
+    color: #3F2B96;
+    margin-top: 70px;
+}
+
+.content {
+    width: 50%;
+    margin: auto;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: white;
+    padding: 3rem;
+    box-shadow: 3px 3px 30px #3F2B96;
+    overflow-x: none;
+}
+
+.item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rightbox img {
+    height: 350px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.rightbox {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 10px 5px 34px #5442a5;
+    border-radius: 20px;
+}
+
+.rightbox .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #9d7fbda0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    opacity: 0;
+    transition: all 0.6s ease;
+}
+
+.rightbox .overlay:hover {
+    opacity: 1;
+}
+
+.leftbox {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.rightbox:hover {
+    transform: scale(1.2);
+}
+
+.heading {
+    text-decoration: underline;
+}
